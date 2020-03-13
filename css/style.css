@@ -1,0 +1,151 @@
+:root {
+    font-size: 16px;
+}
+
+html {
+    background-color: #0e0e0e;
+    color: antiquewhite;
+}
+
+.icon{
+    height: 45px;
+    width: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.493);
+    padding: 0.5rem 0rem 0.5rem 1.5rem;
+    box-sizing: border-box;
+    color: #111111;
+}
+
+#nav-bar >* {
+    padding-right: 1.5rem;
+}
+
+div#logo{
+    display: flex;
+    align-items: center;
+}
+
+#banner {
+    background-image: url(/images/guitar.jpg);
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* #banner-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+} */
+
+#top-container {
+    position: relative;
+    text-align: center;
+    color: #ffc600;
+    border-bottom: 1px solid white;
+}
+
+#features{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 50%;
+    margin-left: 25%;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+#features h2 {
+    color: #ffc600;
+}
+
+#video {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+#pricing{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#classic, #acoustic, #electric {
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+#classic li, #acoustic li, #electric li {
+    padding-bottom: 0.5rem;
+}
+
+.title-pricing{
+    padding-bottom: 0.5rem;
+    border-bottom: solid 1px white;
+    font-size: 1.3rem;
+    color: #ffc600;
+}
+
+.select-guitar {
+    font-size: 1.2rem;
+    padding: 0.5em;
+    background-color: #ffc600;
+    border: none;
+}
+
+.select-guitar:hover {
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.24);
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+form >* {
+    margin-top: 1rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 1.5rem 0.5rem 1.5rem;
+}
+
+#further-info >* {
+    margin-left: 2rem;
+}
