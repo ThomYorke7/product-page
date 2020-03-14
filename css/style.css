@@ -9,6 +9,7 @@
 html {
     background-image: url(../images/wallpaper.png);
     color: antiquewhite;
+    scroll-behavior: smooth;
 }
 
 body {
