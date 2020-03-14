@@ -12,29 +12,31 @@
 <body>
     <header id="header">
         <div id="logo">
-            <img class="icon" id="header-img" src="./images/logo.png">
-            <a id="company-name" href="#">Original Guitars</a>
+            <img class="icon" id="header-img" src="./images/logowhite.png">
+            <a id="company-name" href="#top-container">Original Guitars</a>
         </div>
         <nav id="nav-bar">
-            <a href="#top-container" class="nav-link">Features</a>
-            <a href="#quality" class="nav-link">Media</a>
+            <a href="#features" class="nav-link">Features</a>
+            <a href="#video-container" class="nav-link">Media</a>
             <a href="#pricing" class="nav-link">Pricing</a>
+            <a href="#form" class="nav-link">Contact</a>
         </nav>
 
     </header>
 
-    <div id="banner">
-        <!-- <img id="banner-img" src="./images/guitar.jpg"> -->
-    </div>
     <div id="top-container">
-        <h1>High Quality Handcrafted Instruments</h1>
+        <div id="top-logo">
+            <img class="icon" id="header-img" src="./images/logowhite.png">
+            <h1 id="company-name">Original Guitars</h1>
+        </div>
+        <h3>High Quality Handcrafted Instruments</h3>
     </div>
     <div id="features">
         <img class="icon" id="materials-img" src="./images/materials.png">
         <div id="materials">
             <h2>Premium Materials</h2>
-            <p>Our guitars are made of the best wood which is sourced locally. This increases the longevity of your
-                purchase as well as its quality.</p>
+            <p>Our guitars are made of the best locally sourced wood. This increases the longevity of your purchase as
+                well as its quality.</p>
         </div>
         <img class="icon" id="shipping-img" src="./images/shipping.png">
         <div id="shipping">
@@ -50,14 +52,14 @@
         </div>
     </div>
 
-    <div id="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/polw2YaLOXE" frameborder="0"
+    <div id="video-container">
+        <iframe id="video" width="700" height="440" src="https://www.youtube.com/embed/polw2YaLOXE" frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
     <div id="pricing">
         <div id="classic">
-            <div class="title-pricing">Classic Guitars</div>
+            <div class="guitar-type">Classic Guitars</div>
             <ul>
                 <li>€199</li>
                 <li>Cedar Body</li>
@@ -68,7 +70,7 @@
             <button class="select-guitar">Select</button>
         </div>
         <div id="acoustic">
-            <div class="title-pricing">Acoustic Guitars</div>
+            <div class="guitar-type">Acoustic Guitars</div>
             <ul>
                 <li>€299</li>
                 <li>Mahogany Body</li>
@@ -79,7 +81,7 @@
             <button class="select-guitar">Select</button>
         </div>
         <div id="electric">
-            <div class="title-pricing">Electric Guitars</div>
+            <div class="guitar-type">Electric Guitars</div>
             <ul>
                 <li>€399</li>
                 <li>Maple Body</li>
@@ -92,9 +94,15 @@
     </div>
 
     <form id="form">
-        <label for="email">Enter your email for further inquiries</label>
+        <p id="form-title">CONTACT US</p>
+        <div id="separator"></div>
+        <label for="name">My name is:</label>
+        <input id="name" type="text" placeholder="Enter your name">
+        <label for="email">My email address is:</label>
         <input id="email" type="email" placeholder="Enter your email address">
-        <button type="submit">GET STARTED</button>
+        <label for="request">Comment or request:</label>
+        <textarea id="request" placeholder="Enter your comment or request"></textarea>
+        <button type="submit">SEND REQUEST</button>
     </form>
 
     <footer>

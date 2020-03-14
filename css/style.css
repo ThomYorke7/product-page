@@ -1,10 +1,18 @@
+/* Global Settings */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=PT+Serif&display=swap');
+
 :root {
-    font-size: 16px;
+    font-size: 18px;
+    font-family: 'PT Serif', serif;
 }
 
 html {
-    background-color: #0e0e0e;
+    background-image: url(/images/stressed_linen_@2X.png);
     color: antiquewhite;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .icon{
@@ -15,8 +23,11 @@ html {
 a {
     text-decoration: none;
     color: inherit;
+    outline: 0;
 }
 
+
+/* Navigation Bar */
 header {
     display: flex;
     align-items: center;
@@ -25,10 +36,10 @@ header {
     width: 100%;
     top: 0;
     z-index: 1;
-    background-color: rgba(255, 255, 255, 0.493);
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 0.5rem 0rem 0.5rem 1.5rem;
     box-sizing: border-box;
-    color: #111111;
+    color: antiquewhite;
 }
 
 #nav-bar >* {
@@ -40,27 +51,35 @@ div#logo{
     align-items: center;
 }
 
-#banner {
+#top-container {
     background-image: url(/images/guitar.jpg);
-    height: 90vh;
+    height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
-}
-
-/* #banner-img {
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 80vh;
-    width: 100%;
-} */
-
-#top-container {
-    position: relative;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    color: #ffc600;
+    color: #ffffff;
     border-bottom: 1px solid white;
+    justify-content: flex-end;
 }
 
+#top-logo {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin-left: 25%;
+    justify-content: center;
+}
+
+#top-logo img {
+    height: 120px;
+    margin: 0
+}
+
+
+/* Features Grid */
 #features{
     display: grid;
     grid-template-columns: auto auto;
@@ -68,20 +87,26 @@ div#logo{
     width: 50%;
     margin-left: 25%;
     align-items: center;
-    column-gap: 2rem;
+    column-gap: 1.5rem;
 }
 
 #features h2 {
     color: #ffc600;
 }
 
-#video {
+
+/* Video Flexbox */
+#video-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
     margin-top: 3rem;
     margin-bottom: 4rem;
+    align-items: center;
 }
 
+
+/* Pricing Flexbox */
 #pricing{
     display: flex;
     justify-content: space-evenly;
@@ -107,7 +132,7 @@ ul {
     padding-bottom: 0.5rem;
 }
 
-.title-pricing{
+.guitar-type{
     padding-bottom: 0.5rem;
     border-bottom: solid 1px white;
     font-size: 1.3rem;
@@ -122,22 +147,67 @@ ul {
 }
 
 .select-guitar:hover {
-    box-shadow: 0 0 5px 0 rgba(0,0,0,0.24);
+    box-shadow: 0 0 5px 0 rgba(256,256,256,0.24);
     cursor: pointer;
 }
 
+
+/* Contact Form Flexbox */
 form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
+    width: 30%;
     margin-top: 3rem;
     margin-bottom: 3rem;
+    margin-left: 35%;
+    font-size: 1.2rem;
 }
 
-form >* {
+form label {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+#form-title {
+    text-align: center;
+    margin-bottom: 0;
+    color: #ffc600;
+}
+
+#separator {
+    border-bottom: 1px solid;
+    width: 10%;
+    align-self: center;
     margin-top: 1rem;
 }
 
+input#name, input#email {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: antiquewhite;
+}
+
+#request {
+    resize: none;
+    overflow: scroll;
+    height: 6rem;
+    border: none;
+    margin-bottom: 0.5rem;
+}
+
+form button {
+    font-size: 1rem;
+    padding: 0.5em;
+    background-color: #ffc600;
+    border: none;
+    width: 100%;
+}
+
+
+/* Footer */
 footer {
     display: flex;
     flex-direction: row-reverse;
@@ -148,4 +218,78 @@ footer {
 
 #further-info >* {
     margin-left: 2rem;
+}
+
+
+/* Media Queries */
+@media (max-width: 800px) {
+
+    #nav-bar >* {
+        padding-right: 0.5rem;
+    }
+
+    #top-logo {
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        margin-left: 0%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #features{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr 1fr 1fr;
+        width: 100%;
+        margin-left: 0%;
+        align-items: center;
+        column-gap: 1.5rem;
+    }
+
+    #video-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+        width: 100vw;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    #video{
+        width: 100%;
+    }
+
+    #pricing{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 0%;
+    }
+
+    #classic, #acoustic, #electric {
+        border: 1px solid;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        height: 100%;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        width: 90%;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        margin-left: 5%;
+        font-size: 1.2rem;
+    }
+
 }
