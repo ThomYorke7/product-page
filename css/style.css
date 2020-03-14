@@ -217,7 +217,7 @@ footer {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    margin: 0.5rem 1.5rem 0.5rem 1.5rem;
+    margin: 0.5rem 1.5rem 0rem 1.5rem;
 }
 
 #further-info >* {
