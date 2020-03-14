@@ -206,6 +206,10 @@ form button {
     width: 100%;
 }
 
+form button:hover{
+    cursor: pointer;
+}
+
 
 /* Footer */
 footer {
