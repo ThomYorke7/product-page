@@ -7,7 +7,7 @@
 }
 
 html {
-    background-image: url(/images/stressed_linen_@2X.png);
+    background-image: url(./images/stressed_linen_@2X.png);
     color: antiquewhite;
 }
 
@@ -52,7 +52,7 @@ div#logo{
 }
 
 #top-container {
-    background-image: url(/images/guitar.jpg);
+    background-image: url(./images/guitar.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
